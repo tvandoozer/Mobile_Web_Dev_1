@@ -1,0 +1,102 @@
+/* colours */
+:root {
+  --primary: #616161;
+  --title: #f5f5f5;
+  --add-btn: #4caf50;
+  --cards: #424242;
+}
+
+/* layout styles */
+nav {
+  background: var(--primary);
+  /* border-bottom: 10px solid var(--secondary); */
+}
+nav a {
+  text-transform: uppercase;
+  color: var(--title);
+  font-size: large;
+}
+nav a span {
+  font-weight: bold;
+}
+nav .sidenav-trigger {
+  margin: 0;
+  cursor: pointer;
+}
+.notifications {
+  margin-right: 25px;
+  cursor: pointer;
+}
+
+/* sub styles */
+.subs {
+  margin-top: 20px;
+}
+.card-panel.sub {
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0px 1px 3px rgba(90, 90, 90, 0.1);
+  display: grid;
+  grid-template-columns: 2fr 6fr 1fr;
+  grid-template-areas: "image details delete";
+  position: relative;
+}
+.sub img {
+  grid-area: image;
+  max-width: 60px;
+}
+.sub-details {
+  grid-area: details;
+  margin-top: 6px;
+}
+.sub-edit {
+  grid-area: delete;
+  position: absolute;
+  bottom: 14px;
+  right: 10px;
+}
+.sub-edit i {
+  font-size: 18px;
+  cursor: pointer;
+}
+.sub-title {
+  font-weight: bold;
+}
+.expenses-title {
+  font-size: small;
+  font-weight: bold;
+  color: #bdbdbd;
+}
+.cost {
+  font-size: large;
+  font-weight: bold;
+}
+.more {
+  grid-area: delete;
+  position: absolute;
+  bottom: 14px;
+  right: 10px;
+}
+.more i {
+  font-size: 25px;
+}
+.sub-ingredients {
+  font-size: 0.8em;
+}
+
+/* form-styles */
+.add-btn {
+  /* margin-top: 20px; */
+  background: var(--add-btn) !important;
+}
+input {
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+}
+.side-form button {
+  background: var(--add-btn);
+  box-shadow: 1px 1px 3px rgba(90, 90, 90, 0.2);
+}
+form .input-field {
+  margin-top: 30px;
+}
